@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #082062 50%, white 50%);
+            backdrop-filter: none;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col justify-center items-center min-h-screen p-6">
+
+    <h1 class="text-3xl md:text-4xl font-medium text-white mb-6 absolute top-6 left-6">Our Services</h1>
+
+
+    <div class="flex flex-wrap justify-center">
+
+        <div class="bg-white w-56 p-4 m-8 rounded-sm shadow-2xl text-center transform transition-transform hover:scale-105 relative"
+            onmouseenter="rotateBox(this)">
+            <div class="flex justify-center mb-4 -mt-8">
+                <div class="bg-white p-2 rounded-full border-4 shadow-md" style="border-color: #082062;">
+                    <i class="fas fa-tools text-4xl text-purple-800"></i>
+                </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Emergency Plumbing Services</h3>
+            <p class="text-gray-600 mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights,
+                weekends, and holidays.</p>
+            <a href="#" class="text-purple-800 font-semibold hover:underline">EXPLORE THIS SERVICE <i
+                    class="fa-solid fa-caret-right"></i></a>
+        </div>
+
+        <div class="bg-white w-56 p-4 m-8 rounded-sm shadow-2xl text-center transform transition-transform hover:scale-105 relative"
+            onmouseenter="rotateBox(this)">
+            <div class="flex justify-center mb-4 -mt-8">
+                <div class="bg-white p-2 rounded-full border-4 shadow-md" style="border-color: #082062;">
+                    <i class="fas fa-wrench text-4xl text-purple-800"></i>
+                </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Plumbing and Drains</h3>
+            <p class="text-gray-600 mb-4">As the largest plumbing and drain service company, we make thousands of
+                repairs every day.</p>
+            <a href="#" class="text-purple-800 font-semibold hover:underline">EXPLORE THIS SERVICE <i
+                    class="fa-solid fa-caret-right"></i></a>
+        </div>
+
+        <div class="bg-white w-56 p-4 m-8 rounded-sm shadow-2xl text-center transform transition-transform hover:scale-105 relative"
+            onmouseenter="rotateBox(this)">
+            <div class="flex justify-center mb-4 -mt-8">
+                <div class="bg-white p-2 rounded-full border-4 shadow-md" style="border-color: #082062;">
+                    <i class="fas fa-water text-4xl text-purple-800"></i>
+                </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Water Damage</h3>
+            <p class="text-gray-600 mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup
+                equipment.</p>
+            <a href="#" class="text-purple-800 font-semibold hover:underline">EXPLORE THIS SERVICE <i
+                    class="fa-solid fa-caret-right"></i></a>
+        </div>
+
+        <div class="bg-white w-56 p-4 m-8 rounded-sm shadow-2xl text-center transform transition-transform hover:scale-105 relative"
+            onmouseenter="rotateBox(this)">
+            <div class="flex justify-center mb-4 -mt-8">
+                <div class="bg-white p-2 rounded-full border-4 shadow-md" style="border-color: #082062;">
+                    <i class="fas fa-fire text-4xl text-purple-800"></i>
+                </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Water Heaters</h3>
+            <p class="text-gray-600 mb-4">Trust us for repair and replacement of gas, electric, and tankless water
+                heaters.</p>
+            <a href="#" class="text-purple-800 font-semibold hover:underline">EXPLORE THIS SERVICE <i
+                    class="fa-solid fa-caret-right"></i></a>
+        </div>
+    </div>
+
+    <script>
+
+        function rotateBox(element) {
+            element.style.zIndex = "10";
+            anime({
+                targets: element,
+                rotate: '1turn',
+                duration: 800,
+                easing: 'easeInOutSine',
+                complete: function () {
+                    element.style.transform = '';
+                    element.style.zIndex = "";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
